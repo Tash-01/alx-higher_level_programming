@@ -4,11 +4,15 @@ def roman_to_int(roman_string):
         return 0
     val = {'I': 1, 'V': 5, 'X': 10, 'L': 50, 'C': 100, 'D': 500, 'M': 1000}
     numberss = [val[c] for c in roman_string] + [0]
-    res  = 0
+    res = 0
+    i = 0
 
     for x in range(len(numbers) - 1):
-        if numbers[x] >= numbers[x + 1]:
-            res += numbers[x]
+        if val[roman_string[x]] >= i
+            res += val[x]
         else:
             res -= numbers[x]
+            i = val[x]
             return (res)
+
+
